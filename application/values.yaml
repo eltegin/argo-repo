@@ -49,14 +49,14 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     acme.cert-manager.io/http01-edit-in-place: "true"
   hosts:
-    - host: ext-demo.eltegin.com
+    - host: argo-demo.eltegin.com
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls: 
-    - secretName: ext-demo-tls
+    - secretName: argo-demo-tls
       hosts:
-        - ext-demo.eltegin.com
+        - argo-demo.eltegin.com
  
 
 
